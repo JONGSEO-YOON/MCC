@@ -15,6 +15,12 @@
 		04DBCF58201EE2070024BD79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DBCF56201EE2070024BD79 /* LaunchScreen.storyboard */; };
 		04DBCF63201EE2070024BD79 /* MCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF62201EE2070024BD79 /* MCCTests.swift */; };
 		04DBCF6E201EE2070024BD79 /* MCCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF6D201EE2070024BD79 /* MCCUITests.swift */; };
+		04DBCF7C201EE4D20024BD79 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF7B201EE4D20024BD79 /* MainTabVC.swift */; };
+		04DBCF7E201EE9770024BD79 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF7D201EE9770024BD79 /* Extension.swift */; };
+		04DBCF80201F00510024BD79 /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF7F201F00510024BD79 /* LibraryVC.swift */; };
+		04DBCF82201F00790024BD79 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF81201F00790024BD79 /* SearchVC.swift */; };
+		04DBCF84201F008A0024BD79 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF83201F008A0024BD79 /* ProfileVC.swift */; };
+		04DBCF86201F00960024BD79 /* RankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBCF85201F00960024BD79 /* RankVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		04DBCF69201EE2070024BD79 /* MCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DBCF6D201EE2070024BD79 /* MCCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCUITests.swift; sourceTree = "<group>"; };
 		04DBCF6F201EE2070024BD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DBCF7B201EE4D20024BD79 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		04DBCF7D201EE9770024BD79 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		04DBCF7F201F00510024BD79 /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
+		04DBCF81201F00790024BD79 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		04DBCF83201F008A0024BD79 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		04DBCF85201F00960024BD79 /* RankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,13 @@
 			children = (
 				04DBCF4A201EE2070024BD79 /* AppDelegate.swift */,
 				04DBCF4C201EE2070024BD79 /* ViewController.swift */,
+				04DBCF7B201EE4D20024BD79 /* MainTabVC.swift */,
+				04DBCF7D201EE9770024BD79 /* Extension.swift */,
 				04DBCF4E201EE2070024BD79 /* Main.storyboard */,
+				04DBCF7F201F00510024BD79 /* LibraryVC.swift */,
+				04DBCF81201F00790024BD79 /* SearchVC.swift */,
+				04DBCF85201F00960024BD79 /* RankVC.swift */,
+				04DBCF83201F008A0024BD79 /* ProfileVC.swift */,
 				04DBCF54201EE2070024BD79 /* Assets.xcassets */,
 				04DBCF56201EE2070024BD79 /* LaunchScreen.storyboard */,
 				04DBCF59201EE2070024BD79 /* Info.plist */,
@@ -262,9 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DBCF7E201EE9770024BD79 /* Extension.swift in Sources */,
 				04DBCF4D201EE2070024BD79 /* ViewController.swift in Sources */,
+				04DBCF80201F00510024BD79 /* LibraryVC.swift in Sources */,
 				04DBCF53201EE2070024BD79 /* MCC.xcdatamodeld in Sources */,
+				04DBCF84201F008A0024BD79 /* ProfileVC.swift in Sources */,
 				04DBCF4B201EE2070024BD79 /* AppDelegate.swift in Sources */,
+				04DBCF7C201EE4D20024BD79 /* MainTabVC.swift in Sources */,
+				04DBCF82201F00790024BD79 /* SearchVC.swift in Sources */,
+				04DBCF86201F00960024BD79 /* RankVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QF66BM9SJ8;
 				INFOPLIST_FILE = MCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jongseoyoon.www-MCC.MCC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QF66BM9SJ8;
 				INFOPLIST_FILE = MCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jongseoyoon.www-MCC.MCC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

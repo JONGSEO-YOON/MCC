@@ -13,7 +13,8 @@ class MainTabVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.tabBar.unselectedItemTintColor = UIColor.rgb(red: 225, green: 225, blue: 225)
+        tabBar.tintColor = UIColor.rgb(red: 11, green: 17, blue: 45)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +23,5 @@ class MainTabVC: UITabBarController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
