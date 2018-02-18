@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class LibraryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -24,6 +26,18 @@ class LibraryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         outTableView.delegate = self
         outTableView.dataSource = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if( Auth.auth().currentUser == nil ) {
+            performSegue(withIdentifier: "segue_auth", sender: self)
+        } else {
+            databaseRef.child("userData").observe(.value, with: { (snapshot) in
+                if( !snapshot.hasChild((Auth.auth().currentUser?.uid)!) ) {
+                    self.performSegue(withIdentifier: "segue_profileReg", sender: self)
+                }
+            })
+        }
     }
 
     override func didReceiveMemoryWarning() {
